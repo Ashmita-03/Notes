@@ -107,4 +107,11 @@ function deleteNote(noteId){
     displayNotes();
 }
 
+function closeEditPopup(){
+    const editingPopup = document.getElementById('editing-container');
+    if(editingPopup){
+        editingPopup.remove();
+    }
+}
+
 displayNotes();
