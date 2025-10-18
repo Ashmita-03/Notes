@@ -80,3 +80,31 @@ function editNote(noteId) {
 
     document.body.appendChild(editingPopup);
 }
+
+function updateNote(){
+    const noteText = document.getElementById('note-text').value.trim();
+    const editingPopup = document.getElementById('editing-container');
+    if(noteText != ''){
+        const noteId = editingPopup.getAttribute('data-note-id');
+        let notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+        const updatedNotes = notes.map(note =>{
+            if(note.id == noteId){
+                return { id: note.id, text: noteText};
+            }
+            return note;
+        });
+        localStorage.setItem('notes', JSON.stringify(updatedNotes));
+        editingPopup.remove();
+        displayNotes();
+    }
+}
+
+function deleteNote(noteId){
+    let notes = JSON.parse(localStorage.getItem('notes'))||[];
+    notes = notes.filter(note=> note.id !== noteId);
+    localStorage.setItem('notes', JSON.stringify(notes));
+    displayNotes();
+}
+
+displayNotes();
