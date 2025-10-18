@@ -1,7 +1,7 @@
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
 # Momento Notes
 ### Overview 
-This website is a tool for writing down your to do list and your amazing thoughts that come up at random times. This uses your local storage to store the notes you took in the past and save it for later referincing. With easy clicks you can craete edit and delete notes. I made this for my phone and computer to personalize my notes app.
+This website is a tool for writing down your to do list and your amazing thoughts that come up at random times. This uses your local storage to store the notes you took in the past and save it for later referencing. With easy clicks you can create edit and delete notes. I made this for my phone and computer to personalize my notes app.
 ### Features
 - Create, and delete note option
 - Edit notes whenever you want, and cancel your edits with the cancel button.
